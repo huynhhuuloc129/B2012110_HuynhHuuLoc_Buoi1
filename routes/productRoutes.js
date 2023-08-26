@@ -5,12 +5,12 @@ const router = express.Router();
 
 router
   .route('/')
-  .get(productController.getAll)
-  .post(productController.createAccount);
+  .get(productController.getAllProducts)
+  .post(productController.createProduct);
 router
   .route('/:id')
-  .get(productController.getOneCustomer)
-  .patch(productController.updateCustomer)
-  .delete(productController.deleteCustomer);
+  .get(productController.getOneProduct)
+  .patch(productController.updateProduct)
+  .delete(productController.deleteProduct);
 
 module.exports = router;
