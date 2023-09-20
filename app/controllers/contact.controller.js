@@ -1,6 +1,6 @@
 const ContactService = require("../services/contact.service");
-const MongoDB = require("../utils/mongodb.util")
 const ApiError = require("../api-error");
+const MongoDB = require("../utils/mongodb.util")
 
 exports.create =  async (req, res, next) => {
   if (!req.body?.name) {
